@@ -8,6 +8,26 @@ No caso no lugar onde trabalho ultilizamos arquivos com o formato .PEM em um sof
 
 ### Questão 2
 
+POST /api/v1.3.2/person
+Host: 10.123.52.45
+Port: 5322
+Content-Type: application/json
+Payload template: {“id”: <int:id>, “name”: <str:name>}]
+
+
+Explicando a rota:
+ POST /api/v1.3.2/person
+ Primeiramente temos um metodo post que indica que estamos enviando dados ao servidor, isso nos sugere que estamso criando ou adicionando informações a uma pessoa ou usário
+
+ Host: 10.123.52.45
+ Port: 5322
+ Depos temos o host com a porta do servidor
+
+ Content-Type: application/json
+ Aqui temos o tipo de conteudo que estamos enviando ao servidor, no caso um json
+
+ Payload template: {“id”: <int:id>, “name”: <str:name>}]
+ E finalizando temos o template do conteudo que estamos enviando ao servidor, no caso um json com um id e um nome
 
 
 ### Questão 3
