@@ -116,15 +116,19 @@ Para testar as rotas ultilizei o Insomnia:
 
 PUT:
 ATUALIZA USUARIO
+
 http://localhost:3000/users/6286457e-2ce4-4b7a-a31e-cbf30b1ebfd7
 
 GET: - LISTA USUARIOS
+
 http://localhost:3000/users
 
 POST: - CRIA USUARIO
+
 http://localhost:3000/users
 
 DEL: - DELETA USUARIO
+
 http://localhost:3000/users/3578f7d8-8c37-427d-9a03-db76ac23d089
 
 Exeplo de criação:
