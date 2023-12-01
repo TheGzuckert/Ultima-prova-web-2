@@ -123,6 +123,7 @@ DEL: - DELETA USUARIO
 http://localhost:3000/users/3578f7d8-8c37-427d-9a03-db76ac23d089
 
 Exeplo de criação:
+
 ````json
 [
 	{
