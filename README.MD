@@ -8,28 +8,12 @@ No caso no lugar onde trabalho ultilizamos arquivos com o formato .PEM em um sof
 
 ### Questão 2
 
-POST /api/v1.3.2/person
-Host: 10.123.52.45
-Port: 5322
-Content-Type: application/json
-Payload template: {“id”: <int:id>, “name”: <str:name>}]
+curl -X POST \
+  http://10.123.52.45:5322/api/v1.3.2/person \
+  -H 'Content-Type: application/json' \
+  -d '{"id": 666, "name": "Alberto"}'
 
-
-### Explicando a rota:
-
- POST /api/v1.3.2/person
- Primeiramente temos um metodo post que indica que estamos enviando dados ao servidor, isso nos sugere que estamso criando ou adicionando informações a uma pessoa ou usário
-
- Host: 10.123.52.45
- Port: 5322
- Depos temos o host com a porta do servidor
-
- Content-Type: application/json
- Aqui temos o tipo de conteudo que estamos enviando ao servidor, no caso um json
-
- Payload template: {“id”: <int:id>, “name”: <str:name>}]
- E finalizando temos o template do conteudo que estamos enviando ao servidor, no caso um json com um id e um nome
-
+O comando em questão é um metodo POST para a rota acima, e no payload estou passando como parametro no payload o id 666 do usuário Alberto que sera possivel ser visto ao inspencionar a tela no dev tools. 
 
 ### Questão 3
 
@@ -145,19 +129,9 @@ http://localhost:3000/users/3578f7d8-8c37-427d-9a03-db76ac23d089
 
 Exeplo de criação:
 
-	{
-		"id": "3578f7d8-8c37-427d-9a03-db76ac23d089",
-		"nome": "Guilherme",
-		"data_nascimento": "2023-02-10",
-		"email": "exemplo.email@gmail.com"
-	}
-
-
-
-
-
-
-
-
-
-
+{
+ "id": "3578f7d8-8c37-427d-9a03-db76ac23d089",
+ "nome": "Guilherme",
+ "data_nascimento": "2023-02-10",
+ "email": "exemplo.email@gmail.com"
+}
